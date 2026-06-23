@@ -1,0 +1,34 @@
+{
+  "name": "payment-api",
+  "version": "1.0.0",
+  "description": "Payment API service with fixed memory leak using LRU cache",
+  "type": "module",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "type-check": "tsc --noEmit",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "payment",
+    "api",
+    "memory-leak-fix",
+    "lru-cache",
+    "typescript"
+  ],
+  "author": "Senior Engineer",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "lru-cache": "^11.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
